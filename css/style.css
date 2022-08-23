@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+* {
+    box-sizing:border-box;
+    transition:all .2s linear;
+}
+body {
+    font-family:arial;
+    margin:0 !important;
+}
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size:76px;
+    opacity: 6;
+    color:#FF5E19;
+}
+h5 {
+    margin-bottom:30px;
+}
+.card {
+    color:black !important;
+    box-shadow:0 0 30px;
+    border:none;
+
+}
+.card:hover {
+    box-shadow:none;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+}
+.card img {
+    min-height:200px !important;
+}
+.card-body {
+    background:white !important;
+    color:black !important;
+    border-radius:20px;
+}
+h5#selected::before {
+    content:'';
+    display:block;
+    height:5px;
+    width:200px;
+    background:#0B5ED7;
+    transform:translateY(40px);
+    margin:auto;
+    border-radius:10px;
+}
+h5#selected::after {
+    content:'';
+    display:block;
+    height:13px;
+    width:50px;
+    background-color:#0B5ED7;
+    margin:auto;
+    margin-top:2px;
+    border-radius:10px;
+}
+p{
+    font-size:18px;
+    font-family: 'Manrope', sans-serif;
+}
+.btn {
+    border-radius:0 !important;
+    transition:1s;
+    
+}
+.btn:hover {
+    box-shadow:inset 30rem  0 white !important; 
+    color:black;
+}
+tbody, td, tfoot, th, thead, tr {
+    padding:10px 0 !important;
+}
+
+#search {
+    border:1px solid black;
+    padding:5px 15px;
+    border-radius:20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--newtab-primary-action-background);
+    display:flex;
+    align-items:center;
+}
+#search input {
+    border:none;
+    outline:none;
+}
+#search img {
+    cursor:pointer;
+    width:27px;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-right:10px;
+}
+/* ========================= 
+    Gloobal css End
+======================================= */
+.header {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:90vh;
+    text-align:center;
+    background:url("../images/background.jpg") no-repeat top center / cover;
+    color:white;
+}
+.header-item  {
+    width:60%;
+    margin:auto;
+}
+main {
+    background:whitesmoke;
+}
+/* ========================= 
+    section css End
+======================================= */
+@media all and (max-width:767px){
+    h1 {
+       font-size:48px;
+    }
+    .header-item  {
+        width:80%;
+        margin:auto;
+    }
+    .header {
+        height:70vh;
+    }
+    .navbar a.navbar-brand{
+        text-align:center;
+        margin:auto;
+    }
+    #form {
+        margin:auto;
+    }
+    h5#selected::after {
+        margin-top:4px;
+    }
+}   
+@media all and (max-width:576px){
+    .navbar {
+        text-align:center !important;
+        width:300px;
+        padding:30px 10px;
+        margin:auto;
+
+    }
+}
+
+
+
+
+
+/* ========================= 
+    media quary for mobile css End
+======================================= */
