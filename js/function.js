@@ -63,26 +63,42 @@ function addToPlayer(element){
 
     let arrayLength = selectItemArray.length;
 
-    return arrayLength;
+    // return arrayLength;
 }
 
 
 // this function removed an element from an array
 function popout(element){
     let getItem = element.classList.add("d-none");
-
+    
     selectItemArray.pop();
     
     let selectItem = document.getElementById("selectItem").innerText = selectItemArray.length;
- 
+    
+    let getButton = document.querySelectorAll("#select-button");
+    let getRemoveName = element.children[1].innerText;
+    for(let x = 0; x < getButton.length; x++){
+        let buttonElement = getButton[x];
+        
+        let nameText = buttonElement.parentNode.children[0].innerText;
+        // let removeName = element.parentNode.children[x].children[1].innerText;
+        if(getRemoveName.includes(nameText) === true){
+            buttonElement.removeAttribute("disabled", "false");
+        }
+       
+    }
+
+    
 }
+
+
 
 // This function will be get input value and will be return value
 function getInputValue(element){
     let getInput = document.getElementById(element).value;
 
     return parseFloat(getInput);
-   
+    
 }
 
 // This function will be calculate expenses player
