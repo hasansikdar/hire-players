@@ -24,6 +24,9 @@ h5 {
     height:350px;
 
 }
+#calculate-card {
+    min-height:450px !important;
+}
 .card:hover {
     box-shadow:none;
     border: 1px solid rgba(0, 0, 0, 0.175);
@@ -114,6 +117,7 @@ tbody, td, tfoot, th, thead, tr {
     width:60%;
     margin:auto;
 }
+
 main {
     background:whitesmoke;
 }

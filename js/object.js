@@ -14,7 +14,7 @@ let Neymar  = {
  
 let Kylian   = {
     image: "images/Kylian Mbappé.png",
-    name: "Kylian Mbappé",
+    name: "Hasan",
     gols: 56,
     assist: 163,
 }
